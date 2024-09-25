@@ -1,0 +1,36 @@
+//combine two sorted arrays, but maintain the sort order
+
+var combine = function (arr1, arr2) {
+  //final array is the final sorted array
+  finalArray = [];
+  let i = 0,
+    j = 0; // you can declare variables on the same line;
+
+  //intialize the while loop
+
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      finalArray.push(arr1[i]); //if the value in array one is less than array two value, then push the smaller value
+      i++; //increment the smaller array value for next comparison
+    } else {
+      finalArray.push(arr2[j]); //if array 2 is smaller then push this value into the finalArray
+      j++; //increment the second array to check next comparison
+    }
+  }
+
+  //we have to exhuast the entire arrays so let's set up two while loops
+  while (i < arr1.length) {
+    finalArray.push(arr1[i]);
+    i++;
+  }
+
+  while (j < arr2.length) {
+    finalArray.push(arr2[j]);
+    j++;
+  }
+
+  //finally return the final output of the final Array
+  return finalArray;
+};
+
+console.log(combine([1, 3, 7, 9, 11], [2, 4, 5, 10]));
