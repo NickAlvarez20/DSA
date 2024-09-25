@@ -1,0 +1,23 @@
+//is the string a subsequence of the larger string?
+
+var isSubsequence = function (s, t) {
+  //declare two pointers
+  let i = 0;
+  let j = 0;
+  //while loop
+  while (i < s.length && j < t.length) {
+    if (s[i] == t[j]) {
+      i++;
+    }
+    j++;
+    }
+    //if i pointer is now pointing at length of s, then this means that as we iterated through the string, they are now matching, which means return true if it is a subsequence and this is how to check this logic
+    return i == s.length;
+    //so if the current value of i is equal to total s.lenght
+    //then we have found a subsequence
+    
+
+    //A very unique and clever solution by keeping track of variable count and then comparing to original variable length to determine if the values within were "matching"
+};
+
+console.log(isSubsequence('aced', 'abcedefg'));
