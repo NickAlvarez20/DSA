@@ -1,0 +1,21 @@
+var pairsCalculatedTarget = function (nums, target) {
+  //Declare two pointers
+  let leftPointer = 0;
+  let rightPointer = nums.length - 1;
+  //initialize while loop
+  while (leftPointer < rightPointer) {
+    //define current sum
+    let currentSum = nums[leftPointer] + nums[rightPointer];
+    if (currentSum == target) {
+      return `The values that reached target are ${nums[leftPointer]} and ${nums[rightPointer]}`;
+    }
+    if (currentSum > target) {
+      rightPointer--;
+    } else {
+      leftPointer++;
+    }
+  }
+  return `The values that reached the target are ${nums[leftPointer]} and ${nums[rightPointer]}`;
+};
+
+console.log(pairsCalculatedTarget([1, 2, 3, 4, 5], 3));
