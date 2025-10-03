@@ -39,6 +39,7 @@ Navigate to the specific file for the algorithm you want to run. For example, to
 Each file contains an individual script that can be executed independently. Check the comments in each file for specific instructions. 
 
 Example outputs:
+
 -combine_sorted_arrays.js: Merges two sorted arrays, e.g., combine([1, 3, 7, 9, 11], [2, 4, 5, 10]) returns [1, 2, 3, 4, 5, 7, 9, 10, 11].
 
 -is_subsequence.js: Checks if a string is a subsequence, e.g., isSubsequence('aced', 'abcedefg') returns true.
