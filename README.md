@@ -22,8 +22,11 @@ To run this project, you need the following installed on your system:
 This DSA project includes these features:
 
 -Merging two sorted arrays while maintaining sort order.
+
 -Checking if a string is a subsequence of another string.
+
 -Determining if a string is a palindrome.
+
 -Finding pairs in an array that sum to a given target value.
 
 ## Getting Started & Installation
@@ -33,16 +36,24 @@ Clone the repository to your local machine:
 Navigate to the specific file for the algorithm you want to run. For example, to run the merge sorted arrays script:
 `node combine_sorted_arrays.js`
 
-Each file contains an individual script that can be executed independently. Check the comments in each file for specific instructions. Example outputs:
+Each file contains an individual script that can be executed independently. Check the comments in each file for specific instructions. 
+
+Example outputs:
 -combine_sorted_arrays.js: Merges two sorted arrays, e.g., combine([1, 3, 7, 9, 11], [2, 4, 5, 10]) returns [1, 2, 3, 4, 5, 7, 9, 10, 11].
+
 -is_subsequence.js: Checks if a string is a subsequence, e.g., isSubsequence('aced', 'abcedefg') returns true.
+
 -is_palindrome.js: Checks if a string is a palindrome, e.g., isPalindrome('teet') returns true.
+
 -pairs_calculated_target.js: Finds pairs summing to a target, e.g., pairsCalculatedTarget([1, 2, 3, 4, 5], 3) returns The values that reached target are 1 and 2.
 
 ## Learning Outcomes
 This project helped me:
+
 -Build understandings for the two-pointer technique for efficient array and string manipulation.
+
 -Understand time and space complexity analysis (e.g., O(n) for merging arrays, O(n) for palindrome checks).
+
 -Improve problem-solving skills by implementing and testing algorithmic solutions in JavaScript.
 
 ## Contributing
