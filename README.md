@@ -1,4 +1,4 @@
-# [insertProjectName] Project
+# Data Structure and Algorithms Project
 ## Table of Contents
 - [Project Name](#project-name)
 - [About](#about)
